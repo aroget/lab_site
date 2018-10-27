@@ -24,3 +24,10 @@ h1, h2, h3, h4, h5, h6 {
 .text-muted {
   color: var(--grey-2);
 }
+.img-fluid {
+  max-width: 100%;
+}
+
+* > p:first-child {
+  margin-top: 0;
+}

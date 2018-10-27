@@ -32,9 +32,14 @@ const IndexPage = () => (
 export default IndexPage
 
 const IndexSection = styled.section`
-  margin: 80px 0;
+  padding: 120px 0;
+  border-bottom: 1px solid #ddd;
 
   &:first-child {
-    margin-top: 30px;
+    padding-top: 50px;
+  }
+
+  &:last-child {
+    border-bottom: none;
   }
 `

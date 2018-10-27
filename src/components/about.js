@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const content = {
-  image: 'http://placehold.it/300x200',
-  text:
-    'The Shoubridge laboratory at the McGill University in Montreal has a long-standing experience in finding the genetic cause of mitochondrial oxidative phosphorylation deficiencies in both adults and children. The laboratory’s interest lies in deciphering the function of nuclear encoded mitochondrial proteins and their role in mitochondrial disease pathology at a molecular level. More recently, we are using BioID, a proximity biotinylation assay, to create a mitochondrial interaction network, in order to study interfaces between mitochondria and other cellular compartments, as well as functional context of newly identified proteins within mitochondrial RNA granules.',
+function createMarkUp(__html) {
+  return { __html }
 }
 
 const About = () => (
@@ -14,26 +12,50 @@ const About = () => (
       <AboutLeftContainer>
         <img src={content.image} alt="" />
       </AboutLeftContainer>
-      <AboutRightContainer>
-        <p>{content.text}</p>
-      </AboutRightContainer>
+      <AboutRightContainer
+        dangerouslySetInnerHTML={createMarkUp(content.text)}
+      />
     </AboutGridContainer>
   </AboutContainer>
 )
 
-const AboutTitle = styled.h2``
+export default About
+
+const AboutTitle = styled.h2`
+  text-align: center;
+  margin-bottom: 2.5rem;
+`
 const AboutContainer = styled.div``
 const AboutGridContainer = styled.div`
   display: flex;
+
+  @media (max-width: 870px) {
+    flex-flow: column;
+    text-align: center;
+  }
 `
 const AboutLeftContainer = styled.div`
-  display: inline-block;
   flex-grow: 1;
   margin-right: 40px;
+  display: inline-block;
+
+  & > img {
+    margin-bottom: 20px;
+  }
 `
 const AboutRightContainer = styled.div`
   flex-grow: 2;
+  column-count: 2;
   display: inline-block;
+
+  @media (max-width: 870px) {
+    text-align: left;
+    column-count: 1;
+  }
 `
 
-export default About
+const content = {
+  image: 'http://placehold.it/300x200',
+  text:
+    '<p>The Shoubridge laboratory at the McGill University in Montreal has a long-standing experience in finding the genetic cause of mitochondrial oxidative phosphorylation deficiencies in both adults and children.</p><p>The laboratory’s interest lies in deciphering the function of nuclear encoded mitochondrial proteins and their role in mitochondrial disease pathology at a molecular level.</p> <p>More recently, we are using BioID, a proximity biotinylation assay, to create a mitochondrial interaction network, in order to study interfaces between mitochondria and other cellular compartments, as well as functional context of newly identified proteins within mitochondrial RNA granules.<p>',
+}

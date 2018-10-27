@@ -18,7 +18,11 @@ const StaffMember = ({ details }) => {
 
   return (
     <StaffMemberContainer>
-      <img src={image_url} alt={`${first_name} ${last_name}`} />
+      <img
+        className="img-fluid"
+        src={image_url}
+        alt={`${first_name} ${last_name}`}
+      />
       <p>
         {first_name} {last_name}
       </p>
@@ -37,28 +41,36 @@ const StaffGroup = ({ groupName }) => (
   </StaffGroupContainer>
 )
 
-const StaffTitle = styled.h2``
+const StaffTitle = styled.h2`
+  text-align: center;
+  margin-bottom: 2.5rem;
+`
 const StaffContainer = styled.div``
 const StaffMemberContainer = styled.div`
-  width: 300px;
+  width: 310px;
   margin-bottom: 20px;
 
   & > p {
+    text-align: center;
     margin-bottom: 5px;
   }
 
   & > span {
+    display: block;
+    text-align: center;
     font-size: 0.9rem;
   }
 `
 const StaffGroupTitle = styled.h3`
+  text-align: center;
   text-transform: capitalize;
 `
 const StaffList = styled.div`
   display: flex;
   flex-flow: row wrap
-  justify-content: flex-start;
+  justify-content: center;
 `
+
 const StaffGroupContainer = styled.div`
   margin-top: 25px;
   margin-bottom: 25px;
@@ -73,7 +85,7 @@ const members = {
       first_name: 'Eric',
       last_name: 'Shoubridge',
       position: 'Principal Investigator',
-      image_url: 'http://placehold.it/240x200',
+      image_url: 'http://placehold.it/300x400',
     },
   ],
   staff: [
@@ -82,21 +94,21 @@ const members = {
       first_name: 'Alexandre',
       last_name: 'Janer',
       position: 'Research Associate',
-      image_url: 'http://placehold.it/240x200',
+      image_url: 'http://placehold.it/300x400',
     },
     {
       id: 2,
       first_name: 'Hana',
       last_name: 'Antonicka',
       position: 'Research Associate',
-      image_url: 'http://placehold.it/240x200',
+      image_url: 'http://placehold.it/300x400',
     },
     {
       id: 3,
       first_name: 'Kathleen',
       last_name: 'Daigneault',
       position: 'Research Assistant',
-      image_url: 'http://placehold.it/240x200',
+      image_url: 'http://placehold.it/300x400',
     },
   ],
   students: [
@@ -105,35 +117,35 @@ const members = {
       first_name: 'Archita',
       last_name: 'Rajasekharan',
       position: 'PostDoc',
-      image_url: 'http://placehold.it/240x200',
+      image_url: 'http://placehold.it/300x400',
     },
     {
       id: 2,
       first_name: 'Isabella',
       last_name: 'Straub',
       position: 'PhD Student',
-      image_url: 'http://placehold.it/240x200',
+      image_url: 'http://placehold.it/300x400',
     },
     {
       id: 3,
       first_name: 'Mari',
       last_name: 'Aaltonen',
       position: 'PostDoc',
-      image_url: 'http://placehold.it/240x200',
+      image_url: 'http://placehold.it/300x400',
     },
     {
       id: 4,
       first_name: 'Shamisa',
       last_name: 'Honarmand',
       position: 'PhD Student',
-      image_url: 'http://placehold.it/240x200',
+      image_url: 'http://placehold.it/300x400',
     },
     {
       id: 5,
       first_name: 'Jana',
       last_name: 'Schüttpelz',
       position: 'PhD Student',
-      image_url: 'http://placehold.it/240x200',
+      image_url: 'http://placehold.it/300x400',
     },
   ],
 }

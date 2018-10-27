@@ -61,9 +61,13 @@ const Publications = () => (
 
 export default Publications
 
-const PublicationsTitle = styled.h2``
+const PublicationsTitle = styled.h2`
+  text-align: center;
+  margin-bottom: 2.5rem;
+`
 const PublicationGroupTitle = styled.p`
   cursor: pointer;
+  text-align: center;
 `
 const PublicationsContainer = styled.div``
 const PublicationTitle = styled.h4`

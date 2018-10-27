@@ -12,21 +12,18 @@ const links = [
 ]
 
 const Header = ({ siteTitle }) => (
-  <FluidContainer style={{ background: 'var(--dark)' }}>
+  <FluidContainer>
     <Container>
       <HeaderWrapper>
         <SiteNameContainer>
-          <SiteName>{siteTitle}</SiteName>
+          <SiteName style={{ color: 'var(--dark)' }}>{siteTitle}</SiteName>
         </SiteNameContainer>
         <NavBar>
           {links.map(l => (
             <NavBarItem key={l.key}>
-              <AnchorLink
-                href={l.to}
-                style={{ color: 'var(--light)', textDecoration: 'none' }}
-              >
+              <Link href={l.to} style={{ color: 'var(--dark)' }}>
                 {l.label}
-              </AnchorLink>
+              </Link>
             </NavBarItem>
           ))}
         </NavBar>
@@ -37,8 +34,15 @@ const Header = ({ siteTitle }) => (
 
 export default Header
 
+const Link = styled(AnchorLink)`
+  text-decoration: none;
+`
+
 const FluidContainer = styled.div`
+  width: 100%;
   padding: 1rem 0;
+  position: absolute;
+  background: transparent;
 `
 const HeaderWrapper = styled.div`
   display: flex;
