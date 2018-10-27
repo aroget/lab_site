@@ -29,19 +29,12 @@ const ResearchNavItem = ({ meta, clikHandler, active }) => {
 }
 
 const ActiveResearch = ({ topic }) => {
-  const { title, icon, description } = topic
+  const { description } = topic
 
   return (
     <ActiveResearchContainer
       dangerouslySetInnerHTML={createMarkUp(description)}
-    >
-      {/* <ActiveResearchLeftContainer>
-        <img src={icon} alt={title} />
-      </ActiveResearchLeftContainer>
-      <ActiveResearchRightContainer
-        dangerouslySetInnerHTML={createMarkUp(description)}
-      /> */}
-    </ActiveResearchContainer>
+    />
   )
 }
 
