@@ -92,14 +92,9 @@ const PublicationsContainer = styled.div`
 
 const PublicationTitle = styled.h4`
   margin-bottom: 5px;
-  text-align: center;
 `
-const PublicationAuthors = styled.div`
-  text-align: center;
-`
-const PublicationJournal = styled.div`
-  text-align: center;
-`
+const PublicationAuthors = styled.div``
+const PublicationJournal = styled.div``
 
 const data = {
   2018: [

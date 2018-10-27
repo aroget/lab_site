@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
+import StaffAvatar from './avatars'
+
 const Staff = () => (
   <StaffContainer>
     <StaffTitle>Members</StaffTitle>
@@ -18,11 +20,7 @@ const StaffMember = ({ details }) => {
 
   return (
     <StaffMemberContainer>
-      <img
-        className="img-fluid"
-        src={image_url}
-        alt={`${first_name} ${last_name}`}
-      />
+      <StaffAvatar image={image_url} />
       <p>
         {first_name} {last_name}
       </p>
@@ -85,7 +83,7 @@ const members = {
       first_name: 'Eric',
       last_name: 'Shoubridge',
       position: 'Principal Investigator',
-      image_url: 'http://placehold.it/300x400',
+      image_url: 'eric',
     },
   ],
   staff: [
@@ -94,21 +92,21 @@ const members = {
       first_name: 'Alexandre',
       last_name: 'Janer',
       position: 'Research Associate',
-      image_url: 'http://placehold.it/300x400',
+      image_url: 'alex',
     },
     {
       id: 2,
       first_name: 'Hana',
       last_name: 'Antonicka',
       position: 'Research Associate',
-      image_url: 'http://placehold.it/300x400',
+      image_url: 'hana',
     },
     {
       id: 3,
       first_name: 'Kathleen',
       last_name: 'Daigneault',
       position: 'Research Assistant',
-      image_url: 'http://placehold.it/300x400',
+      image_url: 'kathleen',
     },
   ],
   students: [
@@ -117,35 +115,35 @@ const members = {
       first_name: 'Archita',
       last_name: 'Rajasekharan',
       position: 'PostDoc',
-      image_url: 'http://placehold.it/300x400',
+      image_url: 'archita',
     },
     {
       id: 2,
       first_name: 'Isabella',
       last_name: 'Straub',
       position: 'PhD Student',
-      image_url: 'http://placehold.it/300x400',
+      image_url: 'isabella',
     },
     {
       id: 3,
       first_name: 'Mari',
       last_name: 'Aaltonen',
       position: 'PostDoc',
-      image_url: 'http://placehold.it/300x400',
+      image_url: 'mari',
     },
     {
       id: 4,
       first_name: 'Shamisa',
       last_name: 'Honarmand',
       position: 'PhD Student',
-      image_url: 'http://placehold.it/300x400',
+      image_url: 'shamisa',
     },
     {
       id: 5,
       first_name: 'Jana',
       last_name: 'Schüttpelz',
       position: 'PhD Student',
-      image_url: 'http://placehold.it/300x400',
+      image_url: 'jana',
     },
   ],
 }
