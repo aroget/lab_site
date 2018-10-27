@@ -23,5 +23,5 @@ const FadeInUpContainer = styled.div`
   opacity: 0;
   transition-delay: 0ms !important;
   transition-duration: 500ms !important;
-  animation: ${fadeInUp} 1s cubic-bezier(0.5, 0, 0.415, 0.955) forwards 2s;
+  animation: ${fadeInUp} 1s cubic-bezier(0.5, 0, 0.415, 0.955) forwards;
 `

@@ -77,9 +77,9 @@ export default Research
 const ResearchContainer = styled.div``
 
 const ActiveResearchContainer = styled.div`
-  text-align: left;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
+  column-count: 2;
 
   @media (max-width: 870px) {
     width: 100%;

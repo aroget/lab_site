@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
+import FadeInUp from '../animations/fadeinUp'
+
 const Staff = () => (
   <StaffContainer>
     <StaffTitle>Members</StaffTitle>
@@ -17,17 +19,19 @@ const StaffMember = ({ details }) => {
   const { first_name, last_name, position, image_url } = details
 
   return (
-    <StaffMemberContainer>
-      <img
-        className="img-fluid"
-        src={image_url}
-        alt={`${first_name} ${last_name}`}
-      />
-      <p>
-        {first_name} {last_name}
-      </p>
-      <span className="text-muted">{position}</span>
-    </StaffMemberContainer>
+    <FadeInUp>
+      <StaffMemberContainer>
+        <img
+          className="img-fluid"
+          src={image_url}
+          alt={`${first_name} ${last_name}`}
+        />
+        <p>
+          {first_name} {last_name}
+        </p>
+        <span className="text-muted">{position}</span>
+      </StaffMemberContainer>
+    </FadeInUp>
   )
 }
 

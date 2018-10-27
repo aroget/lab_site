@@ -5,6 +5,7 @@ import Hero from '../components/hero'
 import About from '../components/about'
 import Staff from '../components/staff'
 import Layout from '../components/layout'
+import Footer from '../components/footer'
 import Reaserch from '../components/research'
 import Container from '../components/container'
 import Publications from '../components/publications'
@@ -24,6 +25,9 @@ const IndexPage = () => (
       </IndexSection>
       <IndexSection id="publications">
         <Publications />
+      </IndexSection>
+      <IndexSection id="publications">
+        <Footer />
       </IndexSection>
     </Container>
   </Layout>

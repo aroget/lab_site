@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
 
 :root {
   --dark: #2f2f2f;
@@ -7,23 +7,31 @@
   --grey-2: #939393;
   --grey-1: #d2d2d2;
   --sm-breakpoint: 700;
-  --heading-font-family: "Fira Sans";
-  --body-font-family: "Merriweather";
+  --heading-font-family: "Nunito";
+  --body-font-family: "Nunito";
 }
 
 body {
-  color: var(--dark);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--grey-3);
   font-family: var(--body-font-family);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--grey-3);
+  font-weight: 600;
+  color: var(--dark);
   font-family: var(--heading-font-family);
+}
+
+strong {
+  font-weight: 600;
 }
 
 .text-muted {
   color: var(--grey-2);
 }
+
 .img-fluid {
   max-width: 100%;
 }

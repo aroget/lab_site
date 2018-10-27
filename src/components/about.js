@@ -7,7 +7,6 @@ function createMarkUp(__html) {
 
 const About = () => (
   <AboutContainer>
-    <AboutTitle>About The Lab</AboutTitle>
     <AboutGridContainer>
       <AboutLeftContainer>
         <img src={content.image} alt="" />
@@ -21,13 +20,10 @@ const About = () => (
 
 export default About
 
-const AboutTitle = styled.h2`
-  text-align: center;
-  margin-bottom: 2.5rem;
-`
 const AboutContainer = styled.div``
 const AboutGridContainer = styled.div`
   display: flex;
+  margin-top: 2.5rem;
 
   @media (max-width: 870px) {
     flex-flow: column;

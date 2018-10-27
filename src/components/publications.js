@@ -30,8 +30,12 @@ class PublicationGroup extends Component {
     const { year, publications } = this.props
     return (
       <Fragment>
-        <PublicationGroupTitle onClick={this.clickHandler.bind(this)}>
+        <PublicationGroupTitle
+          onClick={this.clickHandler.bind(this)}
+          style={{ border: '1px solid var(--grey-1)' }}
+        >
           {year}
+          <span>{this.state.expanded ? 'Less' : 'More'}</span>
         </PublicationGroupTitle>
         {this.state.expanded
           ? publications.map(p => (
@@ -40,6 +44,7 @@ class PublicationGroup extends Component {
                 title={p.title}
                 journal={p.journal}
                 authors={p.authors}
+                style={{ textAlign: 'center' }}
               />
             ))
           : null}
@@ -54,7 +59,12 @@ const Publications = () => (
     {Object.keys(data)
       .sort((a, b) => a < b)
       .map(year => (
-        <PublicationGroup key={year} year={year} publications={data[year]} />
+        <PublicationGroup
+          style={{ marginBottom: '20px' }}
+          key={year}
+          year={year}
+          publications={data[year]}
+        />
       ))}
   </PublicationsContainer>
 )
@@ -66,15 +76,30 @@ const PublicationsTitle = styled.h2`
   margin-bottom: 2.5rem;
 `
 const PublicationGroupTitle = styled.p`
+  padding: 14px;
   cursor: pointer;
-  text-align: center;
+  text-align: left;
+
+  & > span {
+    float: right;
+    font-size: 0.9rem;
+  }
 `
-const PublicationsContainer = styled.div``
+const PublicationsContainer = styled.div`
+  margin: 0 auto;
+  width: 80%;
+`
+
 const PublicationTitle = styled.h4`
   margin-bottom: 5px;
+  text-align: center;
 `
-const PublicationAuthors = styled.div``
-const PublicationJournal = styled.div``
+const PublicationAuthors = styled.div`
+  text-align: center;
+`
+const PublicationJournal = styled.div`
+  text-align: center;
+`
 
 const data = {
   2018: [
