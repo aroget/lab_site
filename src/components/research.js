@@ -87,8 +87,9 @@ const ActiveResearchRightContainer = styled.div`
 
 const ResearcNavBarContainer = styled.nav`
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
-  margin: 40px auto 50px auto;
+  margin: 60px auto 80px auto;
 `
 
 const ResearchActiveContainer = styled.div``

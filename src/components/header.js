@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import styled from 'styled-components'
 
 import Container from './container'
@@ -8,6 +8,7 @@ const links = [
   { key: 1, to: '#about', label: 'About' },
   { key: 2, to: '#research', label: 'Research' },
   { key: 3, to: '#staff', label: 'Staff' },
+  { key: 4, to: '#publications', label: 'Publications' },
 ]
 
 const Header = ({ siteTitle }) => (
@@ -20,12 +21,12 @@ const Header = ({ siteTitle }) => (
         <NavBar>
           {links.map(l => (
             <NavBarItem key={l.key}>
-              <Link
-                to={l.to}
+              <AnchorLink
+                href={l.to}
                 style={{ color: 'var(--light)', textDecoration: 'none' }}
               >
                 {l.label}
-              </Link>
+              </AnchorLink>
             </NavBarItem>
           ))}
         </NavBar>

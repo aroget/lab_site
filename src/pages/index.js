@@ -13,16 +13,16 @@ const IndexPage = () => (
   <Layout>
     <Hero />
     <Container>
-      <IndexSection>
+      <IndexSection id="about">
         <About />
       </IndexSection>
-      <IndexSection>
+      <IndexSection id="research">
         <Reaserch />
       </IndexSection>
-      <IndexSection>
+      <IndexSection id="staff">
         <Staff />
       </IndexSection>
-      <IndexSection>
+      <IndexSection id="publications">
         <Publications />
       </IndexSection>
     </Container>
