@@ -1,5 +1,7 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import styled from 'styled-components'
+import { StaticQuery, graphql } from 'gatsby'
 
 function createMarkUp(__html) {
   return { __html }
@@ -9,7 +11,22 @@ const About = () => (
   <AboutContainer>
     <AboutGridContainer>
       <AboutLeftContainer>
-        <img src={content.image} alt="" />
+        <StaticQuery
+          query={graphql`
+            query {
+              aboutImage: file(relativePath: { eq: "group.jpg" }) {
+                childImageSharp {
+                  fixed(width: 300, height: 200) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
+            }
+          `}
+          render={data => {
+            return <Img fixed={data.aboutImage.childImageSharp.fixed} />
+          }}
+        />
       </AboutLeftContainer>
       <AboutRightContainer
         dangerouslySetInnerHTML={createMarkUp(content.text)}
@@ -51,7 +68,6 @@ const AboutRightContainer = styled.div`
 `
 
 const content = {
-  image: 'http://placehold.it/300x200',
   text:
     '<p>The Shoubridge laboratory at the McGill University in Montreal has a long-standing experience in finding the genetic cause of mitochondrial oxidative phosphorylation deficiencies in both adults and children.</p><p>The laboratory’s interest lies in deciphering the function of nuclear encoded mitochondrial proteins and their role in mitochondrial disease pathology at a molecular level.</p> <p>More recently, we are using BioID, a proximity biotinylation assay, to create a mitochondrial interaction network, in order to study interfaces between mitochondria and other cellular compartments, as well as functional context of newly identified proteins within mitochondrial RNA granules.<p>',
 }
