@@ -6,6 +6,7 @@ import About from '../components/about'
 import Staff from '../components/staff'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
+import Support from '../components/support'
 import Reaserch from '../components/research'
 import Container from '../components/container'
 import Publications from '../components/publications'
@@ -26,7 +27,10 @@ const IndexPage = () => (
       <IndexSection id="publications">
         <Publications />
       </IndexSection>
-      <IndexSection id="publications">
+      <IndexSection id="support">
+        <Support />
+      </IndexSection>
+      <IndexSection>
         <Footer />
       </IndexSection>
     </Container>
@@ -36,7 +40,7 @@ const IndexPage = () => (
 export default IndexPage
 
 const IndexSection = styled.section`
-  padding: 120px 0;
+  padding: 90px 0;
   border-bottom: 1px solid #ddd;
 
   &:first-child {

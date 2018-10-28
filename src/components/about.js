@@ -37,7 +37,10 @@ const About = () => (
 
 export default About
 
-const AboutContainer = styled.div``
+const AboutContainer = styled.div`
+  width: 80%;
+  margin: 0 auto;
+`
 const AboutGridContainer = styled.div`
   display: flex;
   margin-top: 2.5rem;
