@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import 'normalize.css'
-// import 'typebase.css'
 import './layout.css'
 
 import Header from './header'

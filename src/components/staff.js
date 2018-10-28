@@ -65,7 +65,7 @@ const StaffGroupTitle = styled.h3`
 `
 const StaffList = styled.div`
   display: flex;
-  flex-flow: row wrap
+  flex-flow: row wrap;
   justify-content: center;
 `
 
