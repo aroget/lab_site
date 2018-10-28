@@ -7,7 +7,7 @@ import Container from './container'
 const links = [
   { key: 1, to: '#about', label: 'About' },
   { key: 2, to: '#research', label: 'Research' },
-  { key: 3, to: '#staff', label: 'Staff' },
+  { key: 3, to: '#group', label: 'Group' },
   { key: 4, to: '#publications', label: 'Publications' },
 ]
 

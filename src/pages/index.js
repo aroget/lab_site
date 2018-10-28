@@ -21,7 +21,7 @@ const IndexPage = () => (
       <IndexSection id="research">
         <Reaserch />
       </IndexSection>
-      <IndexSection id="staff">
+      <IndexSection id="group">
         <Staff />
       </IndexSection>
       <IndexSection id="publications">

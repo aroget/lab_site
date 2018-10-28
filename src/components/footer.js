@@ -5,16 +5,20 @@ const Footer = () => (
   <FooterContainer>
     <FooterSection>
       <Title>Call us</Title>
-      <Details className="text-muted">+1.514.398.8523</Details>
+      <Details className="text-muted">
+        Eric: +1.514.398.1997
+        <br />
+        Lab: +1.514.398.8523
+      </Details>
     </FooterSection>
     <FooterSection>
       <Title>Address</Title>
       <Details className="text-muted">
-        Department of Molecular Neurogenetics
+        Montreal Neurological Institute
         <br />
-        McGill University/MNI
+        McGill University
         <br />
-        3801 rue University, Room 660
+        3801 Rue University, Room 672
         <br />
         Montreal, Quebec
         <br />
@@ -32,6 +36,8 @@ export default Footer
 
 const FooterContainer = styled.footer`
   display: flex;
+  width: 80%;
+  margin: 0 auto;
   justify-content: space-between;
 `
 const FooterSection = styled.div`

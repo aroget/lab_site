@@ -6,7 +6,7 @@ const Hero = () => <HeroContainer />
 export default Hero
 
 const HeroContainer = styled.div`
-  height: 800px;
+  height: 500px;
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;

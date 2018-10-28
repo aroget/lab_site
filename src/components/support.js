@@ -7,7 +7,8 @@ const Support = () => (
     <SupportWrapper>
       <SupportLeftContainer>
         <ThankYouMessage>
-          The lab would like to thank the following for their support:
+          The lab would like to thank the following funding sources for their
+          support.
         </ThankYouMessage>
       </SupportLeftContainer>
       <SupportRightContainer>
@@ -36,10 +37,11 @@ const SupportContainer = styled.div`
   margin: 0 auto;
 `
 const ThankYouMessage = styled.div`
-  font-size: 2rem;
+  font-size: 1.8rem;
 `
 const SupportWrapper = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
 `
 

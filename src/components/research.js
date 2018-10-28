@@ -24,7 +24,7 @@ const ResearchNavItem = ({ meta, clikHandler, active }) => {
       onClick={clikHandler}
       className={id === active ? 'active' : null}
     >
-      <div style={{ width: '80px', margin: '0 auto 15px auto' }}>{icon}</div>
+      <div style={{ width: '50px', margin: '0 auto 15px auto' }}>{icon}</div>
       {title}
     </UnstyledButton>
   )
@@ -151,7 +151,7 @@ const topics = [
   },
   {
     id: 2,
-    title: 'Mitochondria in Neurodegnerative Disease',
+    title: 'Neurodegenerative Disease',
     icon: <ImsAls />,
     description:
       '<p>The recent reports of mutations in coiled-helix-coiled-helix domain containing protein 10 (CHCHD10) in autosomal dominant familial ALS, and in its paralogue CHCHD2 in autosomal dominant Parkinson’s disease, have opened a new window on mitochondrial dysfunction in neurodegenerative disorders. CHCHD10 mutations were first uncovered by whole exome sequencing in a family with motor neuron disease, FTD-like symptoms, cerebellar ataxia and myopathy.</p><p>Both CHCHD10 and CHCHD2 are members of the twin CX9C motif family, most of which are targeted to the mitochondrial intermembrane space (IMS) by a specific protein import system.</p><p>The essential function and the mechanism of pathogenesis remain unknown. Our studies focus on deciphering the role of CHCHD10 and CHCHD2 in mitochondria. Isabella is tackling this question by working in mammalian cell lines and neurons and applying a wide range of cell biological methods.</p>',
@@ -165,7 +165,7 @@ const topics = [
   },
   {
     id: 4,
-    title: 'Mitochondrial RNA Metabolism',
+    title: 'RNA Metabolism',
     icon: <RnaGranules />,
     description:
       '<p>Mitochondrial RNA granules, which we initially identified as GRSF1 positive foci, have been shown to play an essential role in post-transcriptional regulation of mitochondrial transcripts, as well as in the early steps of mitochondrial ribosome biogenesis. They contain proteins responsible for post-transcriptional handling of mitochondrial transcripts: enzymes involved in primary transcript processing, modification, polyadenylation and degradation of mitochondrial RNA.</p><p>Hana’s and Shamisa’s research focuses on the characterization of the molecular functions of several of these proteins (e.g. LRPPRC, FASTKD2, FASTKD5, pseudouridine synthases) and their link to mitochondrial disease.</p>',
