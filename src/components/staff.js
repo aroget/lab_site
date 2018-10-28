@@ -77,29 +77,29 @@ const StaffGroupContainer = styled.div`
 export default Staff
 
 const members = {
-  pi: [
+  pI: [
     {
       id: 1,
       first_name: 'Eric',
       last_name: 'Shoubridge',
-      position: 'Principal Investigator',
+      position: 'Group Leader',
       image_url: 'eric',
     },
   ],
   staff: [
     {
       id: 1,
-      first_name: 'Alexandre',
-      last_name: 'Janer',
-      position: 'Research Associate',
-      image_url: 'alex',
-    },
-    {
-      id: 2,
       first_name: 'Hana',
       last_name: 'Antonicka',
       position: 'Research Associate',
       image_url: 'hana',
+    },
+    {
+      id: 2,
+      first_name: 'Alexandre',
+      last_name: 'Janer',
+      position: 'Research Associate',
+      image_url: 'alex',
     },
     {
       id: 3,
@@ -109,13 +109,29 @@ const members = {
       image_url: 'kathleen',
     },
   ],
-  students: [
+  postdocs: [
     {
       id: 1,
       first_name: 'Archita',
       last_name: 'Rajasekharan',
       position: 'PostDoc',
       image_url: 'archita',
+    },
+    {
+      id: 2,
+      first_name: 'Mari',
+      last_name: 'Aaltonen',
+      position: 'PostDoc',
+      image_url: 'mari',
+    },
+  ],
+  students: [
+    {
+      id: 1,
+      first_name: 'Shamisa',
+      last_name: 'Honarmand',
+      position: 'PhD Student',
+      image_url: 'shamisa',
     },
     {
       id: 2,
@@ -126,20 +142,6 @@ const members = {
     },
     {
       id: 3,
-      first_name: 'Mari',
-      last_name: 'Aaltonen',
-      position: 'PostDoc',
-      image_url: 'mari',
-    },
-    {
-      id: 4,
-      first_name: 'Shamisa',
-      last_name: 'Honarmand',
-      position: 'PhD Student',
-      image_url: 'shamisa',
-    },
-    {
-      id: 5,
       first_name: 'Jana',
       last_name: 'Schüttpelz',
       position: 'PhD Student',

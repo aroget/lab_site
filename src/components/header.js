@@ -56,6 +56,7 @@ const SiteNameContainer = styled.div``
 const SiteName = styled.h1`
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 400;
 `
 const NavBarItem = styled.div`
   display: inline-block;
