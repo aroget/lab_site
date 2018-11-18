@@ -24,8 +24,15 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            {
+              name: 'description',
+              content:
+                'Eric Shoubridge’s laboratory focuses on the molecular genetics of mitochondrial diseases, in particular those that affect the function of the respiratory chain. Mitochondria are essential for a number of cellular processes such as heme and iron-sulfur cluster biosynthesis, and for aerobic energy production. Energy production occurs in the respiratory chain, a system composed of five multi-subunit enzyme complexes whose polypeptide components are encoded in both the nuclear and mitochondrial genomes (mtDNA).',
+            },
+            {
+              name: 'keywords',
+              content: 'McGill, Neuroscience, Eric Shoubridge',
+            },
           ]}
         >
           <html lang="en" />
