@@ -93,7 +93,7 @@ const members = {
       first_name: 'Eric',
       last_name: 'Shoubridge',
       position: 'Group Leader',
-      email: 'eric@email.com',
+      email: 'eric.shoubridge@mcgill.ca',
       image_url: 'eric',
       description:
         'Esse omnis repellat dignissimos doloremque non aliquam rerum asperiores, nobis, exercitationem sequi distinctio debitis doloribus, ab tenetur eligendi? Laborum necessitatibus a dolorum.',
@@ -104,7 +104,7 @@ const members = {
       id: 1,
       first_name: 'Hana',
       last_name: 'Antonicka',
-      email: 'hana@email.com',
+      email: 'hana.antonicka@mcgill.ca',
       position: 'Research Associate',
       image_url: 'hana',
       description:
@@ -114,7 +114,7 @@ const members = {
       id: 2,
       first_name: 'Alexandre',
       last_name: 'Janer',
-      email: 'alex@email.com',
+      email: 'alexandre.janer@mcgill.ca',
       position: 'Research Associate',
       image_url: 'alex',
       description:
@@ -124,7 +124,7 @@ const members = {
       id: 3,
       first_name: 'Kathleen',
       last_name: 'Daigneault',
-      email: 'kathleen@email.com',
+      email: 'kathleen.daigneault@mcgill.ca',
       position: 'Research Assistant',
       image_url: 'kathleen',
       description:
@@ -136,7 +136,7 @@ const members = {
       id: 1,
       first_name: 'Archita',
       last_name: 'Rajasekharan',
-      email: 'archita@email.com',
+      email: 'archita.rajasekharan@mcgill.ca',
       position: 'PostDoc',
       image_url: 'archita',
       description:
@@ -146,7 +146,7 @@ const members = {
       id: 2,
       first_name: 'Mari',
       last_name: 'Aaltonen',
-      email: 'mari@email.com',
+      email: 'mari.aaltonen@mcgill.ca',
       position: 'PostDoc',
       image_url: 'mari',
       description:
@@ -158,7 +158,7 @@ const members = {
       id: 1,
       first_name: 'Shamisa',
       last_name: 'Honarmand',
-      email: 'shamisa@email.com',
+      email: 'shamisa.honarmand@mail.mcgill.ca',
       position: 'PhD Student',
       image_url: 'shamisa',
       description:
@@ -168,7 +168,7 @@ const members = {
       id: 2,
       first_name: 'Isabella',
       last_name: 'Straub',
-      email: 'isabella@email.com',
+      email: 'isabella.straub@mail.mcgill.ca',
       position: 'PhD Student',
       image_url: 'isabella',
       description:
@@ -177,7 +177,7 @@ const members = {
     {
       id: 3,
       first_name: 'Jana',
-      email: 'jana@email.com',
+      email: 'jana.schuettpelz@mail.mcgill.ca',
       last_name: 'Schüttpelz',
       position: 'PhD Student',
       image_url: 'jana',
