@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import background from './hero.jpg'
 
-const Hero = () => <HeroContainer />
+const Hero = () => (
+  <HeroContainer style={{ backgroundImage: `url(${background})` }} />
+)
 
 export default Hero
 
@@ -11,5 +14,4 @@ const HeroContainer = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('/static/hero.jpg');
 `
