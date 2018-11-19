@@ -96,7 +96,7 @@ const members = {
       email: 'eric.shoubridge@mcgill.ca',
       image_url: 'eric',
       description:
-        'Esse omnis repellat dignissimos doloremque non aliquam rerum asperiores, nobis, exercitationem sequi distinctio debitis doloribus, ab tenetur eligendi? Laborum necessitatibus a dolorum.',
+        'I started my academic life as an evolutionary ecologist at McGill, did a PhD in comparative metabolic biochemistry at UBC, briefly got seduced by NMR technology as a post-doc at Oxford, helped establish in vivo NMR spectroscopy at the MNI, then took a sharp turn towards human genetics, with a focus on mitochondrial disease, where I found my home.',
     },
   ],
   staff: [
