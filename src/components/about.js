@@ -14,9 +14,9 @@ const About = () => (
         <StaticQuery
           query={graphql`
             query {
-              aboutImage: file(relativePath: { eq: "group.jpg" }) {
+              aboutImage: file(relativePath: { eq: "cells.jpg" }) {
                 childImageSharp {
-                  fixed(width: 300, height: 200) {
+                  fixed(width: 300, height: 300) {
                     ...GatsbyImageSharpFixed
                   }
                 }

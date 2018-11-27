@@ -37,9 +37,8 @@ class Header extends Component {
     this.handleScroll = this.handleScroll.bind(this)
   }
 
-  handleScroll(event) {
-    const { pageY } = event
-    const sticky = pageY >= HERO_HEIGHT
+  handleScroll() {
+    const sticky = window.pageYOffset >= HERO_HEIGHT
 
     this.setState({ sticky })
   }
