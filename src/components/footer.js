@@ -27,7 +27,7 @@ const Footer = () => (
     </FooterSection>
     <FooterSection>
       <Title>E-Mail</Title>
-      <Details className="text-muted">eric@ericpc.mni.mcgill.ca</Details>
+      <Details className="text-muted">eric.shoubridge@mcgill.ca</Details>
     </FooterSection>
   </FooterContainer>
 )
