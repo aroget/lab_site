@@ -86,7 +86,7 @@ class StaffAvatar extends Component {
                 }
               }
             }
-            shamisa: file(relativePath: { eq: "staff/shamisa.jpg" }) {
+            diane: file(relativePath: { eq: "staff/diane.jpg" }) {
               childImageSharp {
                 fixed(width: 280, height: 380) {
                   ...GatsbyImageSharpFixed

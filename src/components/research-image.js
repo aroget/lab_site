@@ -29,7 +29,7 @@ const ResearchImage = ({ image }) => {
             relativePath: { eq: "research/neurodegenerative_disease.png" }
           ) {
             childImageSharp {
-              fixed(width: 313, height: 203) {
+              fixed(width: 313, height: 266) {
                 ...GatsbyImageSharpFixed
               }
             }

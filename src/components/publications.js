@@ -2,13 +2,18 @@ import React, { Fragment, Component } from 'react'
 import styled from 'styled-components'
 
 const PublicationMeta = props => {
-  const { title, authors, journal } = props
+  const { title, doi, authors, journal } = props
 
   return (
     <Fragment>
       <PublicationTitle>{title}</PublicationTitle>
       <PublicationJournal>{journal}</PublicationJournal>
       <PublicationAuthors>{authors}</PublicationAuthors>
+      {doi && (
+        <PublicationDoi href={doi} target="_blank">
+          DOI
+        </PublicationDoi>
+      )}
     </Fragment>
   )
 }
@@ -44,6 +49,7 @@ class PublicationGroup extends Component {
                 title={p.title}
                 journal={p.journal}
                 authors={p.authors}
+                doi={p.doi}
                 style={{ textAlign: 'center' }}
               />
             ))
@@ -75,6 +81,10 @@ const PublicationsTitle = styled.h2`
   text-align: center;
   margin-bottom: 2.5rem;
 `
+
+const PublicationDoi = styled.a`
+  color: black;
+`
 const PublicationGroupTitle = styled.p`
   padding: 14px;
   cursor: pointer;
@@ -99,6 +109,25 @@ const PublicationJournal = styled.div`
 `
 
 const data = {
+  2020: [
+    {
+      id: 1,
+      title: 'A high-density human mitochondrial proximity interaction network',
+      journal: 'bioRxiv 2020.04.01.020479',
+      doi: 'https://doi.org/10.1101/2020.04.01.020479',
+      authors:
+        'Hana Antonicka, Zhen-Yuan Lin, Alexandre Janer, Woranontee Weraarpachai, Anne-Claude Gingras, Eric A. Shoubridge',
+    },
+    {
+      id: 2,
+      title:
+        'A CHCHD10 variant causing ALS elicits an unfolded protein response through the IRE1/XBP1 pathway',
+      journal: 'bioRxiv 2020.05.05.078881',
+      doi: 'https://doi.org/10.1101/2020.05.05.078881',
+      authors:
+        'Isabella R. Straub, Woranontee Weraarpachai, Eric A. Shoubridge',
+    },
+  ],
   2018: [
     {
       id: 1,

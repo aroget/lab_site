@@ -152,18 +152,18 @@ const members = {
       description:
         'Mari from Finland joined the lab recently as a postdoc. She finished her PhD in Germany where she studied phospholipid transport and synthesis in mitochondria. Now she is working on characterizing new players at the ER-mitochondria contact sites. In her free time she likes to enjoy nature and travel.',
     },
+    {
+      id: 3,
+      first_name: 'Diane',
+      last_name: 'Nakamura',
+      email: 'diane.nakamura@mail.mcgill.ca',
+      position: 'PostDoc',
+      image_url: 'diane',
+      description:
+        'Originally from Ontario, Diane investigated the role of netrin-1 on CNS myelin maintenance and stability during her PhD. Now as a PostDoc she is studying the effect of a secret compound on mitochondrial biology. She is also taking over Isabella’s project and continuing the work on the function of CHCHD2. Roaming free she enjoys spending time with friends, running, and painting.',
+    },
   ],
   students: [
-    {
-      id: 1,
-      first_name: 'Shamisa',
-      last_name: 'Honarmand',
-      email: 'shamisa.honarmand@mail.mcgill.ca',
-      position: 'PhD Student',
-      image_url: 'shamisa',
-      description:
-        'Ph.D student. Originally from Iran, Shamisa is now working on the role of the mitochondrial RNA binding protein LRPPRC. Using biochemical methods, cell biology and BioID, Shamisa is trying to find pathogenetic mechanisms of the LRPPRC mutations.',
-    },
     {
       id: 2,
       first_name: 'Isabella',
