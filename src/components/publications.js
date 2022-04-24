@@ -109,6 +109,50 @@ const PublicationJournal = styled.div`
 `
 
 const data = {
+  2021: [
+    {
+      id: 1,
+      title:
+        'ATAD3A has a scaffolding role regulating mitochondria inner membrane structure and protein assembly',
+      journal: 'Cell Rep. 2021 Dec 21;37(12):110139.',
+      doi: 'https://doi.org/10.1016/j.celrep.2021.110139',
+      authors:
+        'Arguello T, Peralta S, Antonicka H, Gaidosh G, Diaz F, Tu YT, Garcia S, Shiekhattar R, Barrientos A, Moraes CT.',
+    },
+    {
+      id: 2,
+      title:
+        'NPTX1 mutations trigger endoplasmic reticulum stress and cause autosomal dominant cerebellar ataxia.',
+      journal: 'Brain. 2021 Nov 11:awab407.',
+      doi: 'https://doi.org/10.1093/brain/awab407',
+      authors:
+        'Coutelier M, Jacoupy M, Janer A, Renaud F, Auger N, Saripella GV, Ancien F, Pucci F, Rooman M, Gilis D, Larivière R, Sgarioto N, Valter R, Guillot-Noel L, Le Ber I, Sayah S, Charles P, Nümann A, Pauly MG, Helmchen C, Deininger N, Haack TB, Brais B, Brice A, Trégouët DA, El Hachimi KH, Shoubridge EA, Durr A, Stevanin G.',
+    },
+    {
+      id: 3,
+      title:
+        'Serine palmitoyltransferase assembles at ER-mitochondria contact sites',
+      journal: 'Life Sci Alliance. 2021 Nov 16;5(2):e202101278.',
+      doi: 'https://doi.org/10.26508/lsa.202101278',
+      authors: 'Aaltonen MJ, Alecu I, König T, Bennett SA, Shoubridge EA.',
+    },
+    {
+      id: 4,
+      title: 'A proximity-dependent biotinylation map of a human cell',
+      journal: 'Nature. 2021 Jul;595(7865):120-124.',
+      doi: 'https://doi.org/10.1038/s41586-021-03592-2',
+      authors:
+        'Go CD, Knight JDR, Rajasekharan A, Rathod B, Hesketh GG, Abe KT, Youn JY, Samavarchi-Tehrani P, Zhang H, Zhu LY, Popiel E, Lambert JP, Coyaud É, Cheung SWT, Rajendran D, Wong CJ, Antonicka H, Pelletier L, Palazzo AF, Shoubridge EA, Raught B, Gingras AC. ',
+    },
+    {
+      id: 5,
+      title:
+        'Multi-OMICS study of a CHCHD10 variant causing ALS demonstrates metabolic rewiring and activation of endoplasmic reticulum and mitochondrial unfolded protein responses.',
+      journal: 'Hum Mol Genet. 2021 May 17;30(8):687-705.',
+      doi: 'https://doi.org/10.1093/hmg/ddab078',
+      authors: 'Straub IR, Weraarpachai W, Shoubridge EA.',
+    },
+  ],
   2020: [
     {
       id: 1,
@@ -126,6 +170,14 @@ const data = {
       doi: 'https://doi.org/10.1101/2020.05.05.078881',
       authors:
         'Isabella R. Straub, Woranontee Weraarpachai, Eric A. Shoubridge',
+    },
+    {
+      id: 3,
+      title:
+        'Poly (A) tail length of human mitochondrial mRNAs is tissue-specific and a mutation in LRPPRC results in transcript-specific patterns of deadenylation.',
+      journal: 'Mol Genet Metab Rep. 2020 Dec 5;25:100687',
+      doi: 'https://doi.org/10.1016/j.ymgmr.2020.100687 ',
+      authors: 'Honarmand S, Shoubridge EA.',
     },
   ],
   2018: [

@@ -3,8 +3,6 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
 
-import FadeInUp from '../animations/fadeinUp'
-
 class StaffAvatar extends Component {
   constructor(props) {
     super(props)
@@ -93,6 +91,13 @@ class StaffAvatar extends Component {
                 }
               }
             }
+            anja: file(relativePath: { eq: "staff/anja.jpg" }) {
+              childImageSharp {
+                fixed(width: 280, height: 380) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         `}
         render={data => {
@@ -102,11 +107,9 @@ class StaffAvatar extends Component {
               onMouseLeave={this.onMouseLeave}
             >
               {this.state.hover ? (
-                <FadeInUp>
-                  <AvatarDescription>
-                    <span style={{ color: 'var(--dark)' }}>{hoverText}</span>
-                  </AvatarDescription>
-                </FadeInUp>
+                <AvatarDescription>
+                  <span style={{ color: 'var(--dark)' }}>{hoverText}</span>
+                </AvatarDescription>
               ) : (
                 <Img fixed={data[image].childImageSharp.fixed} />
               )}

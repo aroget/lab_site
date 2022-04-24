@@ -152,28 +152,8 @@ const members = {
       description:
         'Mari from Finland joined the lab recently as a postdoc. She finished her PhD in Germany where she studied phospholipid transport and synthesis in mitochondria. Now she is working on characterizing new players at the ER-mitochondria contact sites. In her free time she likes to enjoy nature and travel.',
     },
-    {
-      id: 3,
-      first_name: 'Diane',
-      last_name: 'Nakamura',
-      email: 'diane.nakamura@mail.mcgill.ca',
-      position: 'PostDoc',
-      image_url: 'diane',
-      description:
-        'Originally from Ontario, Diane investigated the role of netrin-1 on CNS myelin maintenance and stability during her PhD. Now as a PostDoc she is studying the effect of a secret compound on mitochondrial biology. She is also taking over Isabella’s project and continuing the work on the function of CHCHD2. Roaming free she enjoys spending time with friends, running, and painting.',
-    },
   ],
   students: [
-    {
-      id: 2,
-      first_name: 'Isabella',
-      last_name: 'Straub',
-      email: 'isabella.straub@mail.mcgill.ca',
-      position: 'PhD Student',
-      image_url: 'isabella',
-      description:
-        'Native of Germany, Isabella is working on establishing the role of mitochondrial proteins in neurodegenerative diseases, e.g. ALS and Parkinson’s disease. She is using all “Omics” techniques to determine the way pathogenic mutations in CHCHD2 and CHCHD10 alter the mitochondrial and cellular metabolism. In her free time, she is an avid climber and yoga teacher.',
-    },
     {
       id: 3,
       first_name: 'Jana',
@@ -183,6 +163,16 @@ const members = {
       image_url: 'jana',
       description:
         'Trained and raised in Germany in molecular medicine in Göttingen, Jana is now working on mitochondrial outer membrane proteins particularly on mitochondrial solute carrier protein family SLC25. She always provides us with fresh pastries and enjoys rock climbing, skiing and music in her free time.',
+    },
+    {
+      id: 4,
+      first_name: 'Anja',
+      email: 'anja.deiser@mail.mcgill.ca',
+      last_name: 'Deiser',
+      position: 'Master Student',
+      image_url: 'anja',
+      description:
+        "Originally from Munich Germany, Anja is a Master's student working on identification of changes in mitochondrial interactome in patient cells using BioID. She loves outdoors, climbing and music.",
     },
   ],
 }
